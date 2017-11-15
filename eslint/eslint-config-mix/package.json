@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-mix",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint:check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "lint": "eslint test --max-warnings=10 --fix",
+    "lint:react": "eslint  ./sx-react.js --max-warnings 10 --fix",
+    "lint:vue": "eslint --ext .vue --max-warnings 10 test --fix"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "shuxun",
+  "license": "ISC",
+  "engines": {
+    "node": ">=4"
+  },
+  "peerDependencies": {
+    "eslint": "^3.18.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "babel-eslint": "8.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^2.1.0",
+    "prettier": "^1.7.0"
+  },
+  "devDependencies": {}
+}
