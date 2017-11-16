@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['../vue.js'],
+  extends: ['alloy/vue'],
   env: {
     browser: true
   },

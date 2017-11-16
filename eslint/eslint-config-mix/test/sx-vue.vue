@@ -29,25 +29,25 @@
 </template>
 
 <script>
-    export default {
-      data () {
+export default {
+    data() {
         return {
-          msg: 'test2',
-          time: '00:00:00'
-        }
-  },
-    created () {
-        const _this = this
+            msg: 'test2',
+            time: '00:00:00'
+        };
+    },
+    created() {
+        const _this = this;
 
-    setTimeout(() => {
-          _this.$ajax.get('/time').then(data => {
-            _this.time = data.time
-          })
-    }, 1000)
-  },
+        setTimeout(() => {
+            _this.$ajax.get('/time').then(data => {
+                _this.time = data.time;
+            });
+        }, 1000);
+    },
     computed: {
-        a () {}
+        a() {}
     }
-}
+};
 </script>
 

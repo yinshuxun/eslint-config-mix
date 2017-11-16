@@ -19,7 +19,7 @@
 
 # react use
 ```
-  npm install eslint-config-mix; // 安装
+  npm install eslint-config-mix eslint-plugin-react babel-eslint --save-dev; // 安装
   //eslintrc中添加
   {
     extends: ['mix/react']
@@ -28,7 +28,7 @@
 
 # vue use (here is use eslint-config-alloy)
 ```
-  npm install eslint-config-mix; // 安装
+  npm install eslint-config-mix eslint-plugin-vue babel-eslint --save-dev; // 安装
     //eslintrc中添加
     {
       extends: ['mix/vue']

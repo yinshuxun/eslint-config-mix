@@ -1,13 +1,13 @@
 {
   "name": "eslint-config-mix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "eslint:check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "lint": "eslint test --max-warnings=10 --fix",
+    "lint": "npm run lint:react && npm run lint:vue",
     "lint:react": "eslint  ./sx-react.js --max-warnings 10 --fix",
-    "lint:vue": "eslint --ext .vue --max-warnings 10 test --fix"
+    "lint:vue": "eslint --ext .vue,.js --max-warnings 10 test --fix"
   },
   "keywords": [
     "eslint",
@@ -22,15 +22,18 @@
     "eslint": "^3.18.0 || ^4.0.0"
   },
   "dependencies": {
-    "babel-eslint": "8.0.0",
+    "babel-eslint": "^8.0.2",
     "eslint": "^4.2.0",
+    "eslint-config-alloy": "^1.2.1",
     "eslint-config-prettier": "^2.6.0",
     "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^2.1.0",
+    "eslint-plugin-vue": "3",
     "prettier": "^1.7.0"
   },
   "devDependencies": {}
